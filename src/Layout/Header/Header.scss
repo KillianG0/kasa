@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px 75px 0 75px;
+
+    ul {
+        display: flex;
+        gap: 40px;
+        list-style: none;
+        
+        a {
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
