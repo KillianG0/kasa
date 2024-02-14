@@ -1,0 +1,36 @@
+.liste-logement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    background-color:lightgray;
+    border-radius: 25px;
+    gap: 50px 30px;
+    padding: 56px 0;
+    margin: 43px auto 13px;
+
+    .card {
+        height: 340px;
+        width: 340px;
+        position: relative;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            object-fit: cover;
+            filter: brightness(0.85);
+        }
+        h3 {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            color: hsla(0,0%,100%,.995);
+            font-family: Monserrat;
+            font-size: 18px;
+    font-weight: 500;
+   width: 45%;
+        }
+        
+}
+}
