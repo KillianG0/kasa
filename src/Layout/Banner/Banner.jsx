@@ -1,5 +1,7 @@
-import Banner from '../../assets/ImageHome.png'
-import './Banner.scss'
+import Banner from '../../assets/ImageHome.png';
+import './Banner.scss';
+
+
 function Banner1() {
     return (
       <div className='banner'>
@@ -10,3 +12,6 @@ function Banner1() {
   }
   
   export default Banner1
+  
+  
+  
