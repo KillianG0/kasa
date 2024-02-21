@@ -1,0 +1,68 @@
+.page-logement {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    @media (max-width:768px) {
+        width: 90%;
+    }
+}
+
+.carrousel {
+    position: relative;
+    width: 80%;
+    height: 415px;
+
+    @media (max-width:768px) {
+        width: 100%;
+        height: 255px;
+    }
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+
+    @media (max-width:768px) {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.slide-hidden{
+    display: none;
+
+}
+
+.left, .right {
+    @media (max-width:768px) {
+        width: 20px;
+    }
+}
+
+.left-button {
+    position: absolute;
+    top: 40%;
+    right: 90%;
+    background-color: transparent;
+}
+
+.right-button {
+    position: absolute;
+    top: 40%;
+    left: 90%;
+    background-color: transparent;
+}
+.number {
+    position: absolute;
+    right: 50%;
+    top: 90%;
+    color: white;
+    font-size: 18px;
+
+    @media (max-width:768px) {
+        visibility: hidden;
+    }
+}

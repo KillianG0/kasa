@@ -5,7 +5,7 @@ import './Banner.scss';
 function Banner1() {
     return (
       <div className='banner'>
-          <h1> Chez vous, partout et ailleurs</h1>
+          <h1> Chez vous,<br/> partout et ailleurs</h1>
           <img src={Banner}></img>        
       </div>
     )

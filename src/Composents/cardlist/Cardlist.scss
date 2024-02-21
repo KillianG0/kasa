@@ -1,0 +1,41 @@
+.liste-logement {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 75%;
+  background-color: #f6f6f6;
+  border-radius: 25px;
+  gap: 50px 20px;
+  padding: 2% 2%;
+  margin: 1% auto 1%;
+
+  .card {
+    height: 340px;
+    width: 340px;
+    position: relative;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: 10px;
+      object-fit: cover;
+      filter: brightness(0.85);
+    }
+    h3 {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: 700;
+      width: 45%;
+    }
+  }
+  @media (max-width: 768px) {
+    background-color: white;
+    padding-top: 0;
+    .card {
+      width: 100%;
+    }
+  }
+}

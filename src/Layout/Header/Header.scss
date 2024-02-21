@@ -1,19 +1,36 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 45px 235px 0 235px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 235px 0 235px;
 
-    ul {
-        display: flex;
-        gap: 40px;
-        list-style: none;
-        
-        a {
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+  ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+
+    a {
+      text-decoration: none;
+      font-family: Monserrat;
+      font-size: 24px;
+      color: black;
     }
+    a:hover,
+    a:visited {
+      text-decoration: underline;
+    }
+  }
+  @media (max-width: 768px) {
+    width: 90%;
+    padding-left: 40px;
+    justify-content: space-around;
+    ul {
+      a {
+        font-size: 19px;
+      }
+    }
+    img {
+      width: 30%;
+    }
+  }
 }

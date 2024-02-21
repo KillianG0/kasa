@@ -1,3 +1,4 @@
+@import '../../inder.scss' ;
 .collapses {
     display: flex;
     flex-direction: column;
@@ -17,7 +18,7 @@
         width: 92%;
     }
 }
-.collapse-title {
+.collapse-titre {
     color: white;
     border-radius: 5px;
     display: flex;
@@ -29,12 +30,16 @@
 
     @media (max-width:768px) {
         width: 100%;
+        font-size: 18px;
     }
 }
 
 button {
     border: none;
     background-color: #ff6060;
+    @media (max-width:768px) {
+        margin-right: 30px;
+    }
    
 }
 
@@ -46,7 +51,7 @@ button {
     }
 }
 
-.info {
+.collapsefermer {
     width: 1040px;
     height: 0px;
     @media (max-width:768px) {
@@ -54,20 +59,20 @@ button {
     }
 }
 
-.infoplus {
+.collapsetext {
     height: auto;
     background-color: #f7f7f7;
     border-radius: 0 0 10px 10px;
     padding-bottom: 2px;
     padding-left: 2%;
     padding-right: 2%;
-    font-family: Montserrat;
+    font-family: M;
     font-size: 18px;
     font-weight: 500;
     line-height: 34px;
 
     @media (max-width:768px) {
-        width: 100%;
         height: auto;
+        font-size: 16px;
     }
 }

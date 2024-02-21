@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import Data from '../Data/data.json'
-import Card from './Cards.jsx'
+import Data from '../../Data/data.json'
+import Card from '../Cards.jsx'
 import './Cardlist.scss'
 
 

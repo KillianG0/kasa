@@ -1,25 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500&display=swap');
 .banner {
-    display: flex;
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+
+  h1 {
+    color: white;
+    font-size: 48px;
+    position: absolute;
+    z-index: 1;
     justify-content: center;
-    place-items: center;
-    margin-top: 2rem;
-    position: relative;
-    width:100% ;
-    
+    font-weight: 500;
+    font-family: Montserrat;
+    br {
+        display: none;
+    }
+  }
+  img {
+    width: 75%;
+    height: 223px;
+    object-fit: cover;
+    max-width: 100%;
+    border-radius: 25px;
+    filter: brightness(60%);
+  }
+  @media (max-width: 768px) {
     h1 {
-        color: white;
-        font-size: 48px;
-        position: absolute;
-        z-index: 1;
-        justify-content: center;
-        font-weight: 700;
+      font-size: 30px;
+      text-align: left;
+      padding-right: 20%;
+      br {
+        display: initial;
+      }
     }
     img {
-        width: 75%;
-        height: 223px;
-        object-fit: cover;
-        max-width: 100%;
-        border-radius: 25px;
-        filter: brightness(60%);
+        height: 110px;
     }
-    }
+  }
+}
