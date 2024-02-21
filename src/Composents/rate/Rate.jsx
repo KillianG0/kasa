@@ -1,4 +1,4 @@
-
+import './rate.scss'
 function Rate({ rating }) {
     const stars = [];
 
@@ -10,6 +10,7 @@ function Rate({ rating }) {
 
     return (
         <div className="rating">{stars}</div>
+        
     );
 }
 

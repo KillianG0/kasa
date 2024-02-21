@@ -1,5 +1,6 @@
 import { useParams } from 'react-router-dom';
-import Data from '../Data/data.json'
+import Data from '../../Data/data.json'
+import './infolog.scss'
 function Info() {
     const { id } = useParams();
 

@@ -3,11 +3,11 @@ import Header from "../../Layout/Header/Header";
 import Footer from "../../Layout/Footer/Footer";
 import Slider from "../../Composents/carrousel/carrousel";
 import Tag from "../../Composents/tag";
-import Rate from "../../Composents/Rate";
+import Rate from "../../Composents/rate/Rate";
 import Data from "../../Data/data.json";
 import Collapse from "../../Composents/collapse";
-import Profil from "../../Composents/infoproprio";
-import Info from "../../Composents/infolog";
+import Profil from "../../Composents/infoproprio/infoproprio";
+import Info from "../../Composents/infologement/infolog";
 import "./Logements.scss";
 
 const LogementCard = () => {
@@ -18,9 +18,30 @@ const LogementCard = () => {
     <div className="page-logement">
       <Header />
       <div className="global">
-        <Slider
+        <Slider data={clickedLogement.pictures}
+          total={clickedLogement.pictures.length}
+        />
+       
+          <div className="conteneur">
+        <div className="infotag">
+          <Info />
+            <Tag/>
+            </div>
+            <div className="profil2">
+            <Profil />
+            <Rate rating={clickedLogement.rating} />
+            </div>
+            </div>
+    
+        <div className="collapses-logement">
+          <Collapse
+            name="Description"
+            description={clickedLogement.description}
+          />
+          <Collapse name="Équipements" data={clickedLogement.equipments}
          />
         </div>
+        
       </div>
       <Footer />
     </div>

@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import Data from '../Data/data.json'
+import Data from '../../Data/data.json'
 import './infoproprio.scss'
 function Profil() {
     const { id } = useParams();

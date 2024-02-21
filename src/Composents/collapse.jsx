@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import down from '../assets/down.png'
 import up from '../assets/up-arrow.png'
+import './collapse.scss'
 
 
 function Collapse ({name, data, description}){

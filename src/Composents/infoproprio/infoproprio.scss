@@ -1,0 +1,16 @@
+.profil {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.proprio-img {
+  border-radius: 50%;
+  width: 65px;
+
+  @media (max-width: 768px) {
+    width: 32px;
+    height: 32px;
+  }
+}

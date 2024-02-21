@@ -1,0 +1,21 @@
+.global {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+}
+
+.conteneur {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.profil2 {
+  display: flex;
+  flex-direction: column;
+}

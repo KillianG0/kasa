@@ -1,0 +1,16 @@
+.rating {
+  display: flex;
+  justify-content: space-between;
+ 
+  width: 196px;
+}
+
+.star {
+  color: #ff6060;
+  width: 24.75px;
+  font-size: 30px;
+  @media (max-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+}
