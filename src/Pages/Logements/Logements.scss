@@ -13,9 +13,44 @@
   gap: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+
 }
+
 
 .profil2 {
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+
+.collapses-logement {
+  display: flex;
+  width: 70%;
+  .collapse {
+    width: 100%;
+  }
+  .col1 {
+    width: 100%;
+  }
+  .col2 {
+    width: 100%;
+    position: relative;
+    left: 80px;
+   
+    
+  }
+}
+
+
+
+.ul-equipments {
+  list-style-type: none;
+  margin: 0;
+
+  li{
+      padding:2px 0;
+  }
 }

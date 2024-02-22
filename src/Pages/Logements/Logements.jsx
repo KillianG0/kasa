@@ -18,30 +18,33 @@ const LogementCard = () => {
     <div className="page-logement">
       <Header />
       <div className="global">
-        <Slider data={clickedLogement.pictures}
+        <Slider
+          data={clickedLogement.pictures}
           total={clickedLogement.pictures.length}
         />
-       
-          <div className="conteneur">
-        <div className="infotag">
-          <Info />
-            <Tag/>
-            </div>
-            <div className="profil2">
+
+        <div className="conteneur">
+          <div className="infotag">
+            <Info />
+            <Tag />
+          </div>
+          <div className="profil2">
             <Profil />
             <Rate rating={clickedLogement.rating} />
-            </div>
-            </div>
-    
-        <div className="collapses-logement">
-          <Collapse
-            name="Description"
-            description={clickedLogement.description}
-          />
-          <Collapse name="Équipements" data={clickedLogement.equipments}
-         />
+          </div>
         </div>
-        
+
+        <div className="collapses-logement">
+          <div className="col1">
+            <Collapse
+              name="Description"
+              description={clickedLogement.description}
+            />
+          </div>
+          <div className="col2">
+            <Collapse name="Équipements" data={clickedLogement.equipments} />
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
