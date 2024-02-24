@@ -52,7 +52,6 @@
 }
 
 @media (max-width: 768px) {
-
   .global {
     width: 100%;
   }
@@ -71,7 +70,9 @@
       align-items: center;
       flex-wrap: nowrap;
       flex-direction: row-reverse;
-    
+      .rating {
+        padding-bottom: 30px;
+      }
     }
 
     .info-logement {
@@ -86,23 +87,21 @@
       }
     }
   }
-.logements-tag {
-  width: 100%;
-  .tag-logement {
-    height: 18px;
-    
-    
+  .logements-tag {
+    width: 100%;
+    .tag-logement {
+      height: 18px;
+    }
   }
-}
-.collapses-logement {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding-top: 0;
-  width: 100%;
-  .col2 {
-    left: 0;
+  .collapses-logement {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 0;
+    width: 100%;
+    .col2 {
+      left: 0;
+    }
   }
-}
 }
