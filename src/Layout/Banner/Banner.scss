@@ -6,13 +6,14 @@
   margin-top: 2rem;
   position: relative;
   width: 100%;
+  
 
   h1 {
     color: white;
     font-size: 48px;
     position: absolute;
     z-index: 1;
-    justify-content: center;
+    text-align: center;
     font-weight: 500;
     font-family: 'Montserrat' ;
     br {
@@ -20,7 +21,7 @@
     }
   }
   img {
-    width: 75%;
+    width: 80%;
     height: 223px;
     object-fit: cover;
     max-width: 100%;
@@ -28,16 +29,15 @@
     filter: brightness(60%);
   }
   @media (max-width: 768px) {
+  
     h1 {
-      font-size: 30px;
+      font-size: 24px;
       text-align: left;
-      padding-right: 20%;
+      line-height: 24px;
       br {
         display: initial;
       }
     }
-    img {
-        height: 110px;
-    }
+    
   }
 }

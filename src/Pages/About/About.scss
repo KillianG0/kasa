@@ -1,1 +1,15 @@
-
+@media (max-width: 768px) {
+  .banner {
+    img {
+      width: 85%;
+    }
+  }
+  .carte {
+    width: 99.5%;
+    height: 255px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 10%;
+    margin-left: 0.5%;
+  }
+}

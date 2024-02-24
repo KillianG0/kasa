@@ -7,7 +7,7 @@ import './Cardlist.scss'
 function CardsList () {
     return  <div className='liste-logement'>
                 {Data.map(({id, title, cover}) => (
-                    <Link key={id} to={`../Logements/${id}`}>
+                    <Link key={id} to={`../Logements/${id}`} className='carte'>
                         <Card 
                             key = {id}
                             title = {title}

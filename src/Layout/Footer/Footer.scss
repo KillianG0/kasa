@@ -3,12 +3,9 @@
     color: white;
     padding: 30px;
     text-align: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     place-items: center;
-    position: relative;
-    left: 0;
-    right: 0;
-    bottom: 0px;
     font-family: 'Montserrat' ;
     margin-top: 40px;
 }

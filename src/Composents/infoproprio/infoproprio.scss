@@ -4,14 +4,17 @@
   align-items: center;
   justify-content: flex-end;
   font-family: 'Montserrat';
+  padding-bottom: 30px;
+  p {
+    color: #ff6060;
+    font-weight: 500;
+    font-size: 18px;
+    width: 40%;
+  }
+  
 }
 
 .proprio-img {
   border-radius: 50%;
   width: 65px;
-
-  @media (max-width: 768px) {
-    width: 32px;
-    height: 32px;
-  }
 }

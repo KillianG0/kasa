@@ -30,7 +30,7 @@ function Slider ({data, total}) {
                 />
             ))}
             {data.length > 1 && <button onClick={nextSlide} className="right-button"><img src={right} alt="Right" className="right" /></button>}
-            <span className="number">{currentSlide + 1}/{total}</span>
+            {data.length > 1 && <span className="number">{currentSlide + 1}/{total}</span>}
         </div>
     );
 }
