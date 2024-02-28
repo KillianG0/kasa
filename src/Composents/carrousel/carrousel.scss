@@ -39,6 +39,9 @@
   top: 40%;
   right: 90%;
   background-color: transparent;
+  @media (max-width: 768px) {
+   margin-right: 0;
+  }
 }
 
 .right-button {

@@ -3,6 +3,7 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
 import PageError from "./Pages/Error/Error";
 import Logements from "./Pages/Logements/Logements";
+import './main.scss'
 
 
 

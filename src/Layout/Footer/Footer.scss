@@ -8,4 +8,11 @@
     place-items: center;
     font-family: 'Montserrat' ;
     margin-top: 40px;
+    
+    @media (max-width: 768px) {
+        position:relative;
+        left:0;
+        bottom:0;
+        right:0;
+}
 }

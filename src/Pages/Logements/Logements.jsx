@@ -45,8 +45,8 @@ const LogementCard = () => {
             <Collapse name="Équipements" data={clickedLogement.equipments} />
           </div>
         </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
