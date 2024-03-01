@@ -1,6 +1,8 @@
-import './rate.scss'
+
+import PropTypes from 'prop-types'; 
 import starFull from '../../assets/starFull.png';
 import starLight from '../../assets/starLight.png';
+import './rate.scss';
 
 function Rate({ rating }) {
     const stars = [];
@@ -15,5 +17,9 @@ function Rate({ rating }) {
         <div className="rating">{stars}</div>
     );
 }
+
+Rate.propTypes = {
+    rating: PropTypes.number.isRequired 
+};
 
 export default Rate;
