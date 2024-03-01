@@ -1,9 +1,10 @@
 
+import { useState, useRef } from "react";
+import PropTypes from "prop-types"; 
 
-import  { useState, useRef } from "react";
-import left from '../../assets/arrow-left.png'
-import right from '../../assets/arrow-right.png'
-import './carrousel.scss'
+import left from '../../assets/arrow-left.png';
+import right from '../../assets/arrow-right.png';
+import './carrousel.scss';
 
 function Slider ({data, total}) {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -34,5 +35,11 @@ function Slider ({data, total}) {
         </div>
     );
 }
+
+
+Slider.propTypes = {
+    data: PropTypes.array.isRequired, 
+    total: PropTypes.number.isRequired 
+};
 
 export default Slider;
