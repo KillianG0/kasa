@@ -1,7 +1,7 @@
 import Banner from '../../assets/ImageHome.png';
 import './Banner.scss';
 
-
+//Banner de la page d'acceuil
 function Banner1() {
     return (
       <div className='banner'>

@@ -2,7 +2,7 @@
 import PropTypes from 'prop-types'; 
 
 function Card({ title, cover }) {
-    return (
+    return (                                    //On crée donc la card avec l'image et titre de l'appartement
         <div className="card">
             <img src={cover} alt="Card Cover"/>
             <h3>{title}</h3>

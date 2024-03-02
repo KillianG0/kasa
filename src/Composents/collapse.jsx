@@ -5,10 +5,10 @@ import down from '../assets/down.png';
 import up from '../assets/up-arrow.png';
 import './collapse.scss';
 
-function Collapse({ name, data, description }) {
+function Collapse({ name, data, description }) {       //Mets la collapse en fermer avec useState
     const [close, setClose] = useState(true);
 
-    const handleClick = () => {
+    const handleClick = () => {                //Change l'état de la modale au click
         setClose((prevState) => !prevState);
     };
 
@@ -22,6 +22,7 @@ function Collapse({ name, data, description }) {
             </div>
         </div>
     );
+    //Si data est trouvé grace a map alors récupere equipments pour faire une li , si non défini alors prends le props description
 }
 
 
