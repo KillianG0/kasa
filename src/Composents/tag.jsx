@@ -1,8 +1,8 @@
-import { useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom'; //Récupere  dynamiquement les paramètres de l'URL donc le logement actuel 
 import Data from '../Data/data.json'
 import './tag.scss'
 function Tag () {
-    const { id } = useParams();
+    const { id } = useParams(); //Exrtait e l'identifiant du logement à partir des paramètres de l'URL
     const clickedLogement = Data.find(logement => logement.id === id); //Recherche l'id dans 'data'
     return (
         

@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'; //Récupere les paramètres de l'URL donc le logement actuel 
+import { useParams } from 'react-router-dom'; //Récupere  dynamiquement les paramètres de l'URL donc le logement actuel 
 import Data from '../../Data/data.json'
 import './infoproprio.scss'
 function Profil() {
